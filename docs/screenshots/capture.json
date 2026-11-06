@@ -1,0 +1,12 @@
+{
+  "viewport": {
+    "width": 1600,
+    "height": 1150
+  },
+  "browser": "156.0.8078.79",
+  "scenario": "Reliability stress demonstration",
+  "seed": 42,
+  "trials": 10,
+  "tooling": "Playwright against the actual local Streamlit server",
+  "browser_page_errors": []
+}

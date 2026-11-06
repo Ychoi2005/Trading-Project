@@ -20,6 +20,7 @@ from marketlens.config import (
 )
 from marketlens.execution import evaluate_policy
 from marketlens.faults import inject_faults
+from marketlens.intelligence import exposure_metrics
 from marketlens.market import simulate_market
 from marketlens.metrics import paired_comparisons, penalty_sensitivity, summarize
 from marketlens.policies import Policy, standard_policies
@@ -119,11 +120,12 @@ def run_experiment(
                             penalty_per_share, scenario.order.quantity
                         ),
                         reason=outcome.reason,
+                        **exposure_metrics(outcome, scenario.policy.freshness_ms),
                     )
                 )
     records = pd.DataFrame(rows)
     manifest = dict(
-        schema_version=1,
+        schema_version=2,
         scenarios=[asdict(s) for s in scenarios],
         seeds=list(seeds),
         penalty_per_share=penalty_per_share,
@@ -143,9 +145,96 @@ def run_experiment(
     )
 
 
+def demonstration_scenario() -> Scenario:
+    """Declared stress assumptions; seed 42 is retained, not selected for a winner."""
+    return Scenario(
+        name="Reliability stress demonstration",
+        market=MarketConfig(volatility=0.8),
+        faults=FaultConfig(
+            latency_ms=100, missing_probability=0.35, outage_intervals=(Interval(900, 1200),)
+        ),
+        policy=PolicyConfig(
+            freshness_ms=150, max_wait_ms=750, pause_after_ms=500, max_sequence_gap=1
+        ),
+    )
+
+
+def healthy_scenario() -> Scenario:
+    return Scenario(name="Healthy-market baseline")
+
+
 def scenario_suite(kind: str, base: Scenario | None = None) -> tuple[Scenario, ...]:
     """Suites A–F; seeds shared across settings as well as policies."""
-    base = base or Scenario()
+    base = base or (
+        demonstration_scenario()
+        if kind in {"tradeoffs", "waiting", "urgency", "volatility_latency"}
+        else Scenario()
+    )
+    if kind == "tradeoffs":
+        return (
+            replace(
+                base,
+                name="Healthy reference",
+                market=replace(base.market, volatility=0.2, regime=Regime.STABLE),
+                faults=FaultConfig(),
+                policy=PolicyConfig(),
+            ),
+            replace(base, name="Intermittent reliability"),
+            replace(
+                base,
+                name="Urgent deadline",
+                order=replace(
+                    base.order,
+                    deadline_ms=min(base.market.duration_ms, base.order.arrival_ms + 100),
+                ),
+            ),
+            replace(
+                base,
+                name="Liquidity capacity stress",
+                market=replace(
+                    base.market,
+                    regime=Regime.STABLE,
+                    liquidity=base.order.quantity * 0.5,
+                    spread=0.06,
+                ),
+            ),
+            replace(
+                base,
+                name="Unattainable freshness (rule check)",
+                faults=replace(base.faults, latency_ms=500),
+                policy=replace(base.policy, freshness_ms=50, timeout_execute=False),
+            ),
+        )
+    if kind == "waiting":
+        return tuple(
+            replace(
+                base, name=f"Maximum wait {wait} ms", policy=replace(base.policy, max_wait_ms=wait)
+            )
+            for wait in (0, 200, 750, 1500)
+        )
+    if kind == "urgency":
+        return tuple(
+            replace(
+                base,
+                name=f"Execution budget {budget} ms",
+                order=replace(
+                    base.order,
+                    deadline_ms=min(base.market.duration_ms, base.order.arrival_ms + budget),
+                ),
+            )
+            for budget in (100, 300, 1000)
+        )
+    if kind == "volatility_latency":
+        return tuple(
+            replace(
+                base,
+                name=f"Vol {vol} / Latency {lat}",
+                market=replace(base.market, volatility=vol, regime=Regime.STABLE),
+                faults=replace(base.faults, latency_ms=lat),
+            )
+            for vol in (0.2, 0.8, 1.5)
+            for lat in (50, 100, 250)
+        )
     if kind == "latency":
         return tuple(
             replace(base, name=f"Latency {v} ms", faults=replace(base.faults, latency_ms=v))

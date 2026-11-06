@@ -28,8 +28,10 @@
   plugins. API isolation prevents accidental look-ahead; it is not a security boundary.
 - Editable source checkout is the supported dashboard workflow. The CLI and core
   package install normally; documentation displayed by the app lives in `docs/`.
-- Automated UI tests and HTTP startup checks do not constitute human usability
-  research or browser visual verification. No screenshots are fabricated.
+- The upgrade includes actual Chromium screenshots and desktop visual inspection.
+  Automated UI/browser tests and HTTP checks do not constitute human usability
+  research, accessibility certification, or macOS verification. Screenshot previews
+  use 10 seeds; repeated-trial findings use 100 and can have different conclusions.
 
 Before operational use: obtain licensed real data, calibrate models, model venue
 rules and clocks, independently validate risk controls, test realistic network

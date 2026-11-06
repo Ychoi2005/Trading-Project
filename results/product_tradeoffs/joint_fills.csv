@@ -1,0 +1,16 @@
+scenario,policy,matched_seeds,joint_fills,mean_difference,ci_low,ci_high,lower_cost_pairs,higher_cost_pairs
+Healthy reference,Wait for Fresh Data,100,100,0.0,0.0,0.0,0,0
+Healthy reference,Data Quality Guardrail,100,100,0.0,0.0,0.0,0,0
+Healthy reference,Adaptive Decision Policy,100,100,0.0,0.0,0.0,0,0
+Intermittent reliability,Wait for Fresh Data,100,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577,42,58
+Intermittent reliability,Data Quality Guardrail,100,0,,,,0,0
+Intermittent reliability,Adaptive Decision Policy,100,97,0.10797789402209197,-0.022282206853298667,0.2382379948974826,44,53
+Urgent deadline,Wait for Fresh Data,100,0,,,,0,0
+Urgent deadline,Data Quality Guardrail,100,0,,,,0,0
+Urgent deadline,Adaptive Decision Policy,100,0,,,,0,0
+Liquidity capacity stress,Wait for Fresh Data,100,0,,,,0,0
+Liquidity capacity stress,Data Quality Guardrail,100,0,,,,0,0
+Liquidity capacity stress,Adaptive Decision Policy,100,0,,,,0,0
+Unattainable freshness (rule check),Wait for Fresh Data,100,0,,,,0,0
+Unattainable freshness (rule check),Data Quality Guardrail,100,0,,,,0,0
+Unattainable freshness (rule check),Adaptive Decision Policy,100,0,,,,0,0

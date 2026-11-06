@@ -59,3 +59,60 @@ connectivity, empirically calibrated model validation or fresh published-cloud-t
 restoration was performed. Coverage is not proof of financial correctness. The
 93-test suite, startup checks and saved experiment artifacts establish this
 prototype's tested development workflow, not suitability for live trading.
+
+## Version 0.2 product experience upgrade
+
+The table above is the historical 0.1 record. The latest executed verification:
+
+| Check | Actual outcome |
+| --- | --- |
+| Default/overview/comparison milestone before remaining view changes | 63 focused tests passed |
+| Final full pytest with coverage | 111 passed; 0 failed; no skipped tests |
+| Statement coverage | 1057 / 1068 statements; reported 99%, not branch coverage |
+| Ruff lint and format, including scripts | Passed; 26 Python files formatted |
+| pip check and editable 0.2.0 installation | Passed |
+| All seven AppTest views and new interaction assertions | Passed |
+| Desktop Chromium interaction and screenshots | Six actual screenshots captured; no browser page errors |
+| HTTP health and root on the fresh verification server | Both HTTP 200 |
+| Four new 100-seed studies | 8,400 actual trial-policy outcomes |
+| Product trade-off export replay | All six output artifacts byte-identical |
+| Legacy execution regression | Shared schema-1 execution columns preserved for tested matched seeds |
+
+Browser evidence: `scripts/capture_screenshots.py` drives real Streamlit navigation,
+runs the 10-seed preview comparison, opens exposure/penalty tabs and inspects the
+waiting-policy decision view. Screenshots in `screenshots/` were captured at
+1600×1150 with system Chromium; metadata is in `capture.json`. The overview,
+comparison, simulation and decision screenshots were visually inspected. Initial
+browser automation targeted a hidden radio input; selecting its visible label
+resolved the automation failure. The original overview screenshot attempt was a
+loading frame and is not used in the final evidence.
+
+The first full upgrade run found one old UI-text assertion after the insights
+wording changed; the assertion was updated to the new completion summary and the
+full suite passed. Pandas join deprecation warnings were resolved using compatible
+merge calls. Wilson endpoints now return exact 0/1 at the boundaries so chart
+error lengths cannot become slightly negative through rounding.
+
+Latest commands used the virtual environment:
+
+```sh
+python -m pytest --cov=marketlens --cov-report=term-missing -q
+ruff check src tests app scripts
+ruff format --check src tests app scripts
+python scripts/capture_screenshots.py --base-url http://127.0.0.1:8502
+python -m marketlens.reporting --suite tradeoffs --trials 100 --seed 42 --output results/product_tradeoffs
+python -m marketlens.reporting --suite waiting --trials 100 --seed 42 --output results/waiting
+python -m marketlens.reporting --suite urgency --trials 100 --seed 42 --output results/urgency
+python -m marketlens.reporting --suite volatility_latency --trials 100 --seed 42 --output results/volatility_latency
+python -m marketlens.reporting --manifest results/product_tradeoffs/manifest.json --output /tmp/marketlens-product-replay
+```
+
+Look-ahead and reproducibility: existing causal tests still pass; new tests show
+that exposure and policy traces do not change when retrospective truth is changed,
+that action markers use observed prices, that scenarios/policies reuse matched
+paths, and that repeated new-suite runs reproduce exactly. No trading policy
+receives diagnostics, truth overlays or the future fault schedule.
+
+Remaining limits: no human usability study, accessibility certification, macOS
+execution, empirical calibration, live trading or operational-safety validation.
+The screenshots document a desktop research prototype, not those unperformed checks.

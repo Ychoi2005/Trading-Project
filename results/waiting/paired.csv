@@ -1,0 +1,13 @@
+scenario,policy,baseline,pairs,mean_cost_difference,ci_low,ci_high
+Maximum wait 0 ms,Adaptive Decision Policy,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 0 ms,Data Quality Guardrail,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 0 ms,Wait for Fresh Data,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 200 ms,Adaptive Decision Policy,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 200 ms,Data Quality Guardrail,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 200 ms,Wait for Fresh Data,Always Execute,100,3.121437845070685,2.207731887950591,4.035143802190778
+Maximum wait 750 ms,Adaptive Decision Policy,Always Execute,100,0.40283025837973996,0.04281272850531387,0.762847788254166
+Maximum wait 750 ms,Data Quality Guardrail,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 750 ms,Wait for Fresh Data,Always Execute,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577
+Maximum wait 1500 ms,Adaptive Decision Policy,Always Execute,100,0.40283025837973996,0.04281272850531387,0.762847788254166
+Maximum wait 1500 ms,Data Quality Guardrail,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Maximum wait 1500 ms,Wait for Fresh Data,Always Execute,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577

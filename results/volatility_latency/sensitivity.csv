@@ -1,0 +1,145 @@
+scenario,policy,penalty_per_share,mean_cost,completion_rate
+Vol 0.2 / Latency 50,Always Execute,0.0,1.2000000000009887,1.0
+Vol 0.2 / Latency 50,Wait for Fresh Data,0.0,1.2234904686867107,1.0
+Vol 0.2 / Latency 50,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Vol 0.2 / Latency 50,Adaptive Decision Policy,0.0,1.175689739542421,0.95
+Vol 0.2 / Latency 100,Always Execute,0.0,1.2000000000009887,1.0
+Vol 0.2 / Latency 100,Wait for Fresh Data,0.0,1.2218450929295752,1.0
+Vol 0.2 / Latency 100,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Vol 0.2 / Latency 100,Adaptive Decision Policy,0.0,1.1987105899675097,0.97
+Vol 0.2 / Latency 250,Always Execute,0.0,1.2000000000009887,1.0
+Vol 0.2 / Latency 250,Wait for Fresh Data,0.0,0.3300949537755713,0.0
+Vol 0.2 / Latency 250,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Vol 0.2 / Latency 250,Adaptive Decision Policy,0.0,0.3300949537755713,0.0
+Vol 0.8 / Latency 50,Always Execute,0.0,1.2000000000009887,1.0
+Vol 0.8 / Latency 50,Wait for Fresh Data,0.0,1.29395958912726,1.0
+Vol 0.8 / Latency 50,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Vol 0.8 / Latency 50,Adaptive Decision Policy,0.0,1.282765320834529,0.95
+Vol 0.8 / Latency 100,Always Execute,0.0,1.2000000000009887,1.0
+Vol 0.8 / Latency 100,Wait for Fresh Data,0.0,1.287376262158764,1.0
+Vol 0.8 / Latency 100,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Vol 0.8 / Latency 100,Adaptive Decision Policy,0.0,1.302830258380729,0.97
+Vol 0.8 / Latency 250,Always Execute,0.0,1.2000000000009887,1.0
+Vol 0.8 / Latency 250,Wait for Fresh Data,0.0,1.3203630621517135,0.0
+Vol 0.8 / Latency 250,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Vol 0.8 / Latency 250,Adaptive Decision Policy,0.0,1.3203630621517135,0.0
+Vol 1.5 / Latency 50,Always Execute,0.0,1.2000000000009887,1.0
+Vol 1.5 / Latency 50,Wait for Fresh Data,0.0,1.3761692311798073,1.0
+Vol 1.5 / Latency 50,Data Quality Guardrail,0.0,2.475644046799033,0.0
+Vol 1.5 / Latency 50,Adaptive Decision Policy,0.0,1.4076988985472534,0.95
+Vol 1.5 / Latency 100,Always Execute,0.0,1.2000000000009887,1.0
+Vol 1.5 / Latency 100,Wait for Fresh Data,0.0,1.3638215032926895,1.0
+Vol 1.5 / Latency 100,Data Quality Guardrail,0.0,2.475644046799033,0.0
+Vol 1.5 / Latency 100,Adaptive Decision Policy,0.0,1.4242802645111454,0.97
+Vol 1.5 / Latency 250,Always Execute,0.0,1.2000000000009887,1.0
+Vol 1.5 / Latency 250,Wait for Fresh Data,0.0,2.475644046799033,0.0
+Vol 1.5 / Latency 250,Data Quality Guardrail,0.0,2.475644046799033,0.0
+Vol 1.5 / Latency 250,Adaptive Decision Policy,0.0,2.475644046799033,0.0
+Vol 0.2 / Latency 50,Always Execute,0.01,1.2000000000009887,1.0
+Vol 0.2 / Latency 50,Wait for Fresh Data,0.01,1.2234904686867107,1.0
+Vol 0.2 / Latency 50,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Vol 0.2 / Latency 50,Adaptive Decision Policy,0.01,1.225689739542421,0.95
+Vol 0.2 / Latency 100,Always Execute,0.01,1.2000000000009887,1.0
+Vol 0.2 / Latency 100,Wait for Fresh Data,0.01,1.2218450929295752,1.0
+Vol 0.2 / Latency 100,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Vol 0.2 / Latency 100,Adaptive Decision Policy,0.01,1.2287105899675097,0.97
+Vol 0.2 / Latency 250,Always Execute,0.01,1.2000000000009887,1.0
+Vol 0.2 / Latency 250,Wait for Fresh Data,0.01,1.3300949537755713,0.0
+Vol 0.2 / Latency 250,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Vol 0.2 / Latency 250,Adaptive Decision Policy,0.01,1.3300949537755713,0.0
+Vol 0.8 / Latency 50,Always Execute,0.01,1.2000000000009887,1.0
+Vol 0.8 / Latency 50,Wait for Fresh Data,0.01,1.29395958912726,1.0
+Vol 0.8 / Latency 50,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Vol 0.8 / Latency 50,Adaptive Decision Policy,0.01,1.3327653208345291,0.95
+Vol 0.8 / Latency 100,Always Execute,0.01,1.2000000000009887,1.0
+Vol 0.8 / Latency 100,Wait for Fresh Data,0.01,1.287376262158764,1.0
+Vol 0.8 / Latency 100,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Vol 0.8 / Latency 100,Adaptive Decision Policy,0.01,1.3328302583807285,0.97
+Vol 0.8 / Latency 250,Always Execute,0.01,1.2000000000009887,1.0
+Vol 0.8 / Latency 250,Wait for Fresh Data,0.01,2.3203630621517135,0.0
+Vol 0.8 / Latency 250,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Vol 0.8 / Latency 250,Adaptive Decision Policy,0.01,2.3203630621517135,0.0
+Vol 1.5 / Latency 50,Always Execute,0.01,1.2000000000009887,1.0
+Vol 1.5 / Latency 50,Wait for Fresh Data,0.01,1.3761692311798073,1.0
+Vol 1.5 / Latency 50,Data Quality Guardrail,0.01,3.475644046799033,0.0
+Vol 1.5 / Latency 50,Adaptive Decision Policy,0.01,1.4576988985472534,0.95
+Vol 1.5 / Latency 100,Always Execute,0.01,1.2000000000009887,1.0
+Vol 1.5 / Latency 100,Wait for Fresh Data,0.01,1.3638215032926895,1.0
+Vol 1.5 / Latency 100,Data Quality Guardrail,0.01,3.475644046799033,0.0
+Vol 1.5 / Latency 100,Adaptive Decision Policy,0.01,1.4542802645111452,0.97
+Vol 1.5 / Latency 250,Always Execute,0.01,1.2000000000009887,1.0
+Vol 1.5 / Latency 250,Wait for Fresh Data,0.01,3.475644046799033,0.0
+Vol 1.5 / Latency 250,Data Quality Guardrail,0.01,3.475644046799033,0.0
+Vol 1.5 / Latency 250,Adaptive Decision Policy,0.01,3.475644046799033,0.0
+Vol 0.2 / Latency 50,Always Execute,0.1,1.2000000000009887,1.0
+Vol 0.2 / Latency 50,Wait for Fresh Data,0.1,1.2234904686867107,1.0
+Vol 0.2 / Latency 50,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Vol 0.2 / Latency 50,Adaptive Decision Policy,0.1,1.6756897395424215,0.95
+Vol 0.2 / Latency 100,Always Execute,0.1,1.2000000000009887,1.0
+Vol 0.2 / Latency 100,Wait for Fresh Data,0.1,1.2218450929295752,1.0
+Vol 0.2 / Latency 100,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Vol 0.2 / Latency 100,Adaptive Decision Policy,0.1,1.49871058996751,0.97
+Vol 0.2 / Latency 250,Always Execute,0.1,1.2000000000009887,1.0
+Vol 0.2 / Latency 250,Wait for Fresh Data,0.1,10.330094953775571,0.0
+Vol 0.2 / Latency 250,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Vol 0.2 / Latency 250,Adaptive Decision Policy,0.1,10.330094953775571,0.0
+Vol 0.8 / Latency 50,Always Execute,0.1,1.2000000000009887,1.0
+Vol 0.8 / Latency 50,Wait for Fresh Data,0.1,1.29395958912726,1.0
+Vol 0.8 / Latency 50,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Vol 0.8 / Latency 50,Adaptive Decision Policy,0.1,1.7827653208345293,0.95
+Vol 0.8 / Latency 100,Always Execute,0.1,1.2000000000009887,1.0
+Vol 0.8 / Latency 100,Wait for Fresh Data,0.1,1.287376262158764,1.0
+Vol 0.8 / Latency 100,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Vol 0.8 / Latency 100,Adaptive Decision Policy,0.1,1.6028302583807288,0.97
+Vol 0.8 / Latency 250,Always Execute,0.1,1.2000000000009887,1.0
+Vol 0.8 / Latency 250,Wait for Fresh Data,0.1,11.320363062151714,0.0
+Vol 0.8 / Latency 250,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Vol 0.8 / Latency 250,Adaptive Decision Policy,0.1,11.320363062151714,0.0
+Vol 1.5 / Latency 50,Always Execute,0.1,1.2000000000009887,1.0
+Vol 1.5 / Latency 50,Wait for Fresh Data,0.1,1.3761692311798073,1.0
+Vol 1.5 / Latency 50,Data Quality Guardrail,0.1,12.475644046799031,0.0
+Vol 1.5 / Latency 50,Adaptive Decision Policy,0.1,1.9076988985472536,0.95
+Vol 1.5 / Latency 100,Always Execute,0.1,1.2000000000009887,1.0
+Vol 1.5 / Latency 100,Wait for Fresh Data,0.1,1.3638215032926895,1.0
+Vol 1.5 / Latency 100,Data Quality Guardrail,0.1,12.475644046799031,0.0
+Vol 1.5 / Latency 100,Adaptive Decision Policy,0.1,1.7242802645111457,0.97
+Vol 1.5 / Latency 250,Always Execute,0.1,1.2000000000009887,1.0
+Vol 1.5 / Latency 250,Wait for Fresh Data,0.1,12.475644046799031,0.0
+Vol 1.5 / Latency 250,Data Quality Guardrail,0.1,12.475644046799031,0.0
+Vol 1.5 / Latency 250,Adaptive Decision Policy,0.1,12.475644046799031,0.0
+Vol 0.2 / Latency 50,Always Execute,1.0,1.2000000000009887,1.0
+Vol 0.2 / Latency 50,Wait for Fresh Data,1.0,1.2234904686867107,1.0
+Vol 0.2 / Latency 50,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Vol 0.2 / Latency 50,Adaptive Decision Policy,1.0,6.175689739542419,0.95
+Vol 0.2 / Latency 100,Always Execute,1.0,1.2000000000009887,1.0
+Vol 0.2 / Latency 100,Wait for Fresh Data,1.0,1.2218450929295752,1.0
+Vol 0.2 / Latency 100,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Vol 0.2 / Latency 100,Adaptive Decision Policy,1.0,4.19871058996751,0.97
+Vol 0.2 / Latency 250,Always Execute,1.0,1.2000000000009887,1.0
+Vol 0.2 / Latency 250,Wait for Fresh Data,1.0,100.33009495377557,0.0
+Vol 0.2 / Latency 250,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Vol 0.2 / Latency 250,Adaptive Decision Policy,1.0,100.33009495377557,0.0
+Vol 0.8 / Latency 50,Always Execute,1.0,1.2000000000009887,1.0
+Vol 0.8 / Latency 50,Wait for Fresh Data,1.0,1.29395958912726,1.0
+Vol 0.8 / Latency 50,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Vol 0.8 / Latency 50,Adaptive Decision Policy,1.0,6.2827653208345255,0.95
+Vol 0.8 / Latency 100,Always Execute,1.0,1.2000000000009887,1.0
+Vol 0.8 / Latency 100,Wait for Fresh Data,1.0,1.287376262158764,1.0
+Vol 0.8 / Latency 100,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Vol 0.8 / Latency 100,Adaptive Decision Policy,1.0,4.3028302583807285,0.97
+Vol 0.8 / Latency 250,Always Execute,1.0,1.2000000000009887,1.0
+Vol 0.8 / Latency 250,Wait for Fresh Data,1.0,101.32036306215171,0.0
+Vol 0.8 / Latency 250,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Vol 0.8 / Latency 250,Adaptive Decision Policy,1.0,101.32036306215171,0.0
+Vol 1.5 / Latency 50,Always Execute,1.0,1.2000000000009887,1.0
+Vol 1.5 / Latency 50,Wait for Fresh Data,1.0,1.3761692311798073,1.0
+Vol 1.5 / Latency 50,Data Quality Guardrail,1.0,102.47564404679902,0.0
+Vol 1.5 / Latency 50,Adaptive Decision Policy,1.0,6.407698898547251,0.95
+Vol 1.5 / Latency 100,Always Execute,1.0,1.2000000000009887,1.0
+Vol 1.5 / Latency 100,Wait for Fresh Data,1.0,1.3638215032926895,1.0
+Vol 1.5 / Latency 100,Data Quality Guardrail,1.0,102.47564404679902,0.0
+Vol 1.5 / Latency 100,Adaptive Decision Policy,1.0,4.424280264511145,0.97
+Vol 1.5 / Latency 250,Always Execute,1.0,1.2000000000009887,1.0
+Vol 1.5 / Latency 250,Wait for Fresh Data,1.0,102.47564404679902,0.0
+Vol 1.5 / Latency 250,Data Quality Guardrail,1.0,102.47564404679902,0.0
+Vol 1.5 / Latency 250,Adaptive Decision Policy,1.0,102.47564404679902,0.0

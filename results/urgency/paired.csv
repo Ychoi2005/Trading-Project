@@ -1,0 +1,10 @@
+scenario,policy,baseline,pairs,mean_cost_difference,ci_low,ci_high
+Execution budget 100 ms,Adaptive Decision Policy,Always Execute,100,8.987306439608359,8.937722466203837,9.03689041301288
+Execution budget 100 ms,Data Quality Guardrail,Always Execute,100,8.987306439608359,8.937722466203837,9.03689041301288
+Execution budget 100 ms,Wait for Fresh Data,Always Execute,100,8.987306439608359,8.937722466203837,9.03689041301288
+Execution budget 300 ms,Adaptive Decision Policy,Always Execute,100,2.535307526813936,1.7167129309226166,3.3539021227052555
+Execution budget 300 ms,Data Quality Guardrail,Always Execute,100,9.13104051664369,9.041452003670763,9.220629029616617
+Execution budget 300 ms,Wait for Fresh Data,Always Execute,100,0.17405392562636357,-0.06754536154845456,0.4156532128011817
+Execution budget 1000 ms,Adaptive Decision Policy,Always Execute,100,0.403060202713735,0.041072509544161084,0.7650478958833089
+Execution budget 1000 ms,Data Quality Guardrail,Always Execute,100,9.463170598848873,9.292628501921897,9.633712695775849
+Execution budget 1000 ms,Wait for Fresh Data,Always Execute,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577

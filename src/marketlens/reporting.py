@@ -9,6 +9,7 @@ from pathlib import Path
 from marketlens import __version__
 from marketlens.config import FaultConfig, Interval, MarketConfig, OrderConfig, PolicyConfig, Regime
 from marketlens.experiments import ExperimentResult, Scenario, run_experiment, scenario_suite
+from marketlens.metrics import joint_fill_comparisons
 
 
 def export_result(result: ExperimentResult, directory: str | Path) -> Path:
@@ -16,6 +17,7 @@ def export_result(result: ExperimentResult, directory: str | Path) -> Path:
     destination.mkdir(parents=True, exist_ok=True)
     for name in ("records", "summary", "paired", "sensitivity"):
         getattr(result, name).to_csv(destination / f"{name}.csv", index=False)
+    joint_fill_comparisons(result.records).to_csv(destination / "joint_fills.csv", index=False)
     manifest = reproducibility_manifest(result.manifest)
     (destination / "manifest.json").write_text(
         json.dumps(manifest, indent=2, allow_nan=False) + "\n"
@@ -66,6 +68,10 @@ def main() -> None:
             "combined",
             "thresholds",
             "heatmap",
+            "tradeoffs",
+            "waiting",
+            "urgency",
+            "volatility_latency",
         ],
         default="latency",
     )

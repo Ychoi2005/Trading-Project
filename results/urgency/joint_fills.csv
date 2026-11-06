@@ -1,0 +1,10 @@
+scenario,policy,matched_seeds,joint_fills,mean_difference,ci_low,ci_high,lower_cost_pairs,higher_cost_pairs
+Execution budget 100 ms,Wait for Fresh Data,100,0,,,,0,0
+Execution budget 100 ms,Data Quality Guardrail,100,0,,,,0,0
+Execution budget 100 ms,Adaptive Decision Policy,100,0,,,,0,0
+Execution budget 300 ms,Wait for Fresh Data,100,99,0.06840572687078714,-0.05293694402745559,0.18974839776902985,42,57
+Execution budget 300 ms,Data Quality Guardrail,100,0,,,,0,0
+Execution budget 300 ms,Adaptive Decision Policy,100,73,0.06852809022792705,-0.0916905915110896,0.2287467719669437,36,37
+Execution budget 1000 ms,Wait for Fresh Data,100,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577,42,58
+Execution budget 1000 ms,Data Quality Guardrail,100,0,,,,0,0
+Execution budget 1000 ms,Adaptive Decision Policy,100,97,0.10797789402209197,-0.022282206853298667,0.2382379948974826,44,53

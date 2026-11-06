@@ -1,0 +1,28 @@
+scenario,policy,matched_seeds,joint_fills,mean_difference,ci_low,ci_high,lower_cost_pairs,higher_cost_pairs
+Vol 0.2 / Latency 50,Wait for Fresh Data,100,100,0.02349046868572201,-0.006849519336618964,0.05383045670806298,42,58
+Vol 0.2 / Latency 50,Data Quality Guardrail,100,0,,,,0,0
+Vol 0.2 / Latency 50,Adaptive Decision Policy,100,95,0.018261698014327966,-0.020434661733403133,0.05695805776205906,45,50
+Vol 0.2 / Latency 100,Wait for Fresh Data,100,100,0.021845092928586485,-0.009622305365242955,0.05331249122241592,42,58
+Vol 0.2 / Latency 100,Data Quality Guardrail,100,0,,,,0,0
+Vol 0.2 / Latency 100,Adaptive Decision Policy,100,97,0.026996390688163806,-0.005568454528857576,0.05956123590518519,44,53
+Vol 0.2 / Latency 250,Wait for Fresh Data,100,0,,,,0,0
+Vol 0.2 / Latency 250,Data Quality Guardrail,100,0,,,,0,0
+Vol 0.2 / Latency 250,Adaptive Decision Policy,100,0,,,,0,0
+Vol 0.8 / Latency 50,Wait for Fresh Data,100,100,0.09395958912627121,-0.02740080628327997,0.2153199845358224,42,58
+Vol 0.8 / Latency 50,Data Quality Guardrail,100,0,,,,0,0
+Vol 0.8 / Latency 50,Adaptive Decision Policy,100,95,0.07304577265449849,-0.08174187284749518,0.22783341815649216,45,50
+Vol 0.8 / Latency 100,Wait for Fresh Data,100,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577,42,58
+Vol 0.8 / Latency 100,Data Quality Guardrail,100,0,,,,0,0
+Vol 0.8 / Latency 100,Adaptive Decision Policy,100,97,0.10797789402209197,-0.022282206853298667,0.2382379948974826,44,53
+Vol 0.8 / Latency 250,Wait for Fresh Data,100,0,,,,0,0
+Vol 0.8 / Latency 250,Data Quality Guardrail,100,0,,,,0,0
+Vol 0.8 / Latency 250,Adaptive Decision Policy,100,0,,,,0,0
+Vol 1.5 / Latency 50,Wait for Fresh Data,100,100,0.1761692311788181,-0.05138248276880181,0.403720945126438,42,58
+Vol 1.5 / Latency 50,Data Quality Guardrail,100,0,,,,0,0
+Vol 1.5 / Latency 50,Adaptive Decision Policy,100,95,0.13695860027402323,-0.15327306734725982,0.4271902678953063,45,50
+Vol 1.5 / Latency 100,Wait for Fresh Data,100,100,0.1638215032917003,-0.07217850182457086,0.3998215084079715,42,58
+Vol 1.5 / Latency 100,Data Quality Guardrail,100,0,,,,0,0
+Vol 1.5 / Latency 100,Adaptive Decision Policy,100,97,0.2024417782570869,-0.041797489212695826,0.4466810457268696,44,53
+Vol 1.5 / Latency 250,Wait for Fresh Data,100,0,,,,0,0
+Vol 1.5 / Latency 250,Data Quality Guardrail,100,0,,,,0,0
+Vol 1.5 / Latency 250,Adaptive Decision Policy,100,0,,,,0,0

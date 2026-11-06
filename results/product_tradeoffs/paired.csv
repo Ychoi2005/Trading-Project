@@ -1,0 +1,16 @@
+scenario,policy,baseline,pairs,mean_cost_difference,ci_low,ci_high
+Healthy reference,Adaptive Decision Policy,Always Execute,100,0.0,0.0,0.0
+Healthy reference,Data Quality Guardrail,Always Execute,100,0.0,0.0,0.0
+Healthy reference,Wait for Fresh Data,Always Execute,100,0.0,0.0,0.0
+Intermittent reliability,Adaptive Decision Policy,Always Execute,100,0.40283025837973996,0.04281272850531387,0.762847788254166
+Intermittent reliability,Data Quality Guardrail,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Intermittent reliability,Wait for Fresh Data,Always Execute,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577
+Urgent deadline,Adaptive Decision Policy,Always Execute,100,8.987306439608359,8.937722466203837,9.03689041301288
+Urgent deadline,Data Quality Guardrail,Always Execute,100,8.987306439608359,8.937722466203837,9.03689041301288
+Urgent deadline,Wait for Fresh Data,Always Execute,100,8.987306439608359,8.937722466203837,9.03689041301288
+Liquidity capacity stress,Adaptive Decision Policy,Always Execute,100,0.0,0.0,0.0
+Liquidity capacity stress,Data Quality Guardrail,Always Execute,100,0.0,0.0,0.0
+Liquidity capacity stress,Wait for Fresh Data,Always Execute,100,0.0,0.0,0.0
+Unattainable freshness (rule check),Adaptive Decision Policy,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Unattainable freshness (rule check),Data Quality Guardrail,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678
+Unattainable freshness (rule check),Wait for Fresh Data,Always Execute,100,10.120363062150727,9.792140971524674,10.44858515277678

@@ -1,0 +1,65 @@
+scenario,policy,penalty_per_share,mean_cost,completion_rate
+Maximum wait 0 ms,Always Execute,0.0,1.2000000000009887,1.0
+Maximum wait 0 ms,Wait for Fresh Data,0.0,1.3203630621517135,0.0
+Maximum wait 0 ms,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Maximum wait 0 ms,Adaptive Decision Policy,0.0,1.3203630621517135,0.0
+Maximum wait 200 ms,Always Execute,0.0,1.2000000000009887,1.0
+Maximum wait 200 ms,Wait for Fresh Data,0.0,1.2214378450716736,0.69
+Maximum wait 200 ms,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Maximum wait 200 ms,Adaptive Decision Policy,0.0,1.3203630621517135,0.0
+Maximum wait 750 ms,Always Execute,0.0,1.2000000000009887,1.0
+Maximum wait 750 ms,Wait for Fresh Data,0.0,1.287376262158764,1.0
+Maximum wait 750 ms,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Maximum wait 750 ms,Adaptive Decision Policy,0.0,1.302830258380729,0.97
+Maximum wait 1500 ms,Always Execute,0.0,1.2000000000009887,1.0
+Maximum wait 1500 ms,Wait for Fresh Data,0.0,1.287376262158764,1.0
+Maximum wait 1500 ms,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Maximum wait 1500 ms,Adaptive Decision Policy,0.0,1.302830258380729,0.97
+Maximum wait 0 ms,Always Execute,0.01,1.2000000000009887,1.0
+Maximum wait 0 ms,Wait for Fresh Data,0.01,2.3203630621517135,0.0
+Maximum wait 0 ms,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Maximum wait 0 ms,Adaptive Decision Policy,0.01,2.3203630621517135,0.0
+Maximum wait 200 ms,Always Execute,0.01,1.2000000000009887,1.0
+Maximum wait 200 ms,Wait for Fresh Data,0.01,1.5314378450716737,0.69
+Maximum wait 200 ms,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Maximum wait 200 ms,Adaptive Decision Policy,0.01,2.3203630621517135,0.0
+Maximum wait 750 ms,Always Execute,0.01,1.2000000000009887,1.0
+Maximum wait 750 ms,Wait for Fresh Data,0.01,1.287376262158764,1.0
+Maximum wait 750 ms,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Maximum wait 750 ms,Adaptive Decision Policy,0.01,1.3328302583807285,0.97
+Maximum wait 1500 ms,Always Execute,0.01,1.2000000000009887,1.0
+Maximum wait 1500 ms,Wait for Fresh Data,0.01,1.287376262158764,1.0
+Maximum wait 1500 ms,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Maximum wait 1500 ms,Adaptive Decision Policy,0.01,1.3328302583807285,0.97
+Maximum wait 0 ms,Always Execute,0.1,1.2000000000009887,1.0
+Maximum wait 0 ms,Wait for Fresh Data,0.1,11.320363062151714,0.0
+Maximum wait 0 ms,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Maximum wait 0 ms,Adaptive Decision Policy,0.1,11.320363062151714,0.0
+Maximum wait 200 ms,Always Execute,0.1,1.2000000000009887,1.0
+Maximum wait 200 ms,Wait for Fresh Data,0.1,4.321437845071674,0.69
+Maximum wait 200 ms,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Maximum wait 200 ms,Adaptive Decision Policy,0.1,11.320363062151714,0.0
+Maximum wait 750 ms,Always Execute,0.1,1.2000000000009887,1.0
+Maximum wait 750 ms,Wait for Fresh Data,0.1,1.287376262158764,1.0
+Maximum wait 750 ms,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Maximum wait 750 ms,Adaptive Decision Policy,0.1,1.6028302583807288,0.97
+Maximum wait 1500 ms,Always Execute,0.1,1.2000000000009887,1.0
+Maximum wait 1500 ms,Wait for Fresh Data,0.1,1.287376262158764,1.0
+Maximum wait 1500 ms,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Maximum wait 1500 ms,Adaptive Decision Policy,0.1,1.6028302583807288,0.97
+Maximum wait 0 ms,Always Execute,1.0,1.2000000000009887,1.0
+Maximum wait 0 ms,Wait for Fresh Data,1.0,101.32036306215171,0.0
+Maximum wait 0 ms,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Maximum wait 0 ms,Adaptive Decision Policy,1.0,101.32036306215171,0.0
+Maximum wait 200 ms,Always Execute,1.0,1.2000000000009887,1.0
+Maximum wait 200 ms,Wait for Fresh Data,1.0,32.22143784507168,0.69
+Maximum wait 200 ms,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Maximum wait 200 ms,Adaptive Decision Policy,1.0,101.32036306215171,0.0
+Maximum wait 750 ms,Always Execute,1.0,1.2000000000009887,1.0
+Maximum wait 750 ms,Wait for Fresh Data,1.0,1.287376262158764,1.0
+Maximum wait 750 ms,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Maximum wait 750 ms,Adaptive Decision Policy,1.0,4.3028302583807285,0.97
+Maximum wait 1500 ms,Always Execute,1.0,1.2000000000009887,1.0
+Maximum wait 1500 ms,Wait for Fresh Data,1.0,1.287376262158764,1.0
+Maximum wait 1500 ms,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Maximum wait 1500 ms,Adaptive Decision Policy,1.0,4.3028302583807285,0.97

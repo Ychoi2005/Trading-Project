@@ -1,0 +1,81 @@
+scenario,policy,penalty_per_share,mean_cost,completion_rate
+Healthy reference,Always Execute,0.0,1.2000000000009887,1.0
+Healthy reference,Wait for Fresh Data,0.0,1.2000000000009887,1.0
+Healthy reference,Data Quality Guardrail,0.0,1.2000000000009887,1.0
+Healthy reference,Adaptive Decision Policy,0.0,1.2000000000009887,1.0
+Intermittent reliability,Always Execute,0.0,1.2000000000009887,1.0
+Intermittent reliability,Wait for Fresh Data,0.0,1.287376262158764,1.0
+Intermittent reliability,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Intermittent reliability,Adaptive Decision Policy,0.0,1.302830258380729,0.97
+Urgent deadline,Always Execute,0.0,1.2000000000009887,1.0
+Urgent deadline,Wait for Fresh Data,0.0,0.187306439609344,0.0
+Urgent deadline,Data Quality Guardrail,0.0,0.187306439609344,0.0
+Urgent deadline,Adaptive Decision Policy,0.0,0.187306439609344,0.0
+Liquidity capacity stress,Always Execute,0.0,1.3203630621517135,0.0
+Liquidity capacity stress,Wait for Fresh Data,0.0,1.3203630621517135,0.0
+Liquidity capacity stress,Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Liquidity capacity stress,Adaptive Decision Policy,0.0,1.3203630621517135,0.0
+Unattainable freshness (rule check),Always Execute,0.0,1.2000000000009887,1.0
+Unattainable freshness (rule check),Wait for Fresh Data,0.0,1.3203630621517135,0.0
+Unattainable freshness (rule check),Data Quality Guardrail,0.0,1.3203630621517135,0.0
+Unattainable freshness (rule check),Adaptive Decision Policy,0.0,1.3203630621517135,0.0
+Healthy reference,Always Execute,0.01,1.2000000000009887,1.0
+Healthy reference,Wait for Fresh Data,0.01,1.2000000000009887,1.0
+Healthy reference,Data Quality Guardrail,0.01,1.2000000000009887,1.0
+Healthy reference,Adaptive Decision Policy,0.01,1.2000000000009887,1.0
+Intermittent reliability,Always Execute,0.01,1.2000000000009887,1.0
+Intermittent reliability,Wait for Fresh Data,0.01,1.287376262158764,1.0
+Intermittent reliability,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Intermittent reliability,Adaptive Decision Policy,0.01,1.3328302583807285,0.97
+Urgent deadline,Always Execute,0.01,1.2000000000009887,1.0
+Urgent deadline,Wait for Fresh Data,0.01,1.187306439609344,0.0
+Urgent deadline,Data Quality Guardrail,0.01,1.187306439609344,0.0
+Urgent deadline,Adaptive Decision Policy,0.01,1.187306439609344,0.0
+Liquidity capacity stress,Always Execute,0.01,2.3203630621517135,0.0
+Liquidity capacity stress,Wait for Fresh Data,0.01,2.3203630621517135,0.0
+Liquidity capacity stress,Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Liquidity capacity stress,Adaptive Decision Policy,0.01,2.3203630621517135,0.0
+Unattainable freshness (rule check),Always Execute,0.01,1.2000000000009887,1.0
+Unattainable freshness (rule check),Wait for Fresh Data,0.01,2.3203630621517135,0.0
+Unattainable freshness (rule check),Data Quality Guardrail,0.01,2.3203630621517135,0.0
+Unattainable freshness (rule check),Adaptive Decision Policy,0.01,2.3203630621517135,0.0
+Healthy reference,Always Execute,0.1,1.2000000000009887,1.0
+Healthy reference,Wait for Fresh Data,0.1,1.2000000000009887,1.0
+Healthy reference,Data Quality Guardrail,0.1,1.2000000000009887,1.0
+Healthy reference,Adaptive Decision Policy,0.1,1.2000000000009887,1.0
+Intermittent reliability,Always Execute,0.1,1.2000000000009887,1.0
+Intermittent reliability,Wait for Fresh Data,0.1,1.287376262158764,1.0
+Intermittent reliability,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Intermittent reliability,Adaptive Decision Policy,0.1,1.6028302583807288,0.97
+Urgent deadline,Always Execute,0.1,1.2000000000009887,1.0
+Urgent deadline,Wait for Fresh Data,0.1,10.187306439609344,0.0
+Urgent deadline,Data Quality Guardrail,0.1,10.187306439609344,0.0
+Urgent deadline,Adaptive Decision Policy,0.1,10.187306439609344,0.0
+Liquidity capacity stress,Always Execute,0.1,11.320363062151714,0.0
+Liquidity capacity stress,Wait for Fresh Data,0.1,11.320363062151714,0.0
+Liquidity capacity stress,Data Quality Guardrail,0.1,11.320363062151714,0.0
+Liquidity capacity stress,Adaptive Decision Policy,0.1,11.320363062151714,0.0
+Unattainable freshness (rule check),Always Execute,0.1,1.2000000000009887,1.0
+Unattainable freshness (rule check),Wait for Fresh Data,0.1,11.320363062151714,0.0
+Unattainable freshness (rule check),Data Quality Guardrail,0.1,11.320363062151714,0.0
+Unattainable freshness (rule check),Adaptive Decision Policy,0.1,11.320363062151714,0.0
+Healthy reference,Always Execute,1.0,1.2000000000009887,1.0
+Healthy reference,Wait for Fresh Data,1.0,1.2000000000009887,1.0
+Healthy reference,Data Quality Guardrail,1.0,1.2000000000009887,1.0
+Healthy reference,Adaptive Decision Policy,1.0,1.2000000000009887,1.0
+Intermittent reliability,Always Execute,1.0,1.2000000000009887,1.0
+Intermittent reliability,Wait for Fresh Data,1.0,1.287376262158764,1.0
+Intermittent reliability,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Intermittent reliability,Adaptive Decision Policy,1.0,4.3028302583807285,0.97
+Urgent deadline,Always Execute,1.0,1.2000000000009887,1.0
+Urgent deadline,Wait for Fresh Data,1.0,100.18730643960933,0.0
+Urgent deadline,Data Quality Guardrail,1.0,100.18730643960933,0.0
+Urgent deadline,Adaptive Decision Policy,1.0,100.18730643960933,0.0
+Liquidity capacity stress,Always Execute,1.0,101.32036306215171,0.0
+Liquidity capacity stress,Wait for Fresh Data,1.0,101.32036306215171,0.0
+Liquidity capacity stress,Data Quality Guardrail,1.0,101.32036306215171,0.0
+Liquidity capacity stress,Adaptive Decision Policy,1.0,101.32036306215171,0.0
+Unattainable freshness (rule check),Always Execute,1.0,1.2000000000009887,1.0
+Unattainable freshness (rule check),Wait for Fresh Data,1.0,101.32036306215171,0.0
+Unattainable freshness (rule check),Data Quality Guardrail,1.0,101.32036306215171,0.0
+Unattainable freshness (rule check),Adaptive Decision Policy,1.0,101.32036306215171,0.0

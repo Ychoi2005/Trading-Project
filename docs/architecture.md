@@ -79,3 +79,17 @@ See methodology for policy thresholds, accounting, and non-execution assumptions
 Runtime and exports never reinterpret an absent fill as a zero execution price.
 Float64 pricing is used for synthetic analysis; this is not decimal venue tick
 accounting. No tick/lot rounding or exchange calendar is claimed.
+
+
+## Product intelligence boundary (0.2)
+
+`intelligence.py` derives retrospective diagnoses and human-readable comparisons
+from executed outcomes. It never supplies information to `Policy.decide`.
+`visualization.py` builds Plotly truth/observed traces and action markers from
+immutable events and traces; decision markers use observed values. The dashboard
+owns presets, presentation and current/outdated result labels. Scenario presets
+and new suites are in `experiments.py`; the healthy API default remains unchanged.
+Schema-2 metrics add integrated pending exposure and observable quote-age at fill.
+`joint_fills.csv` reports realized paired differences only when both orders fill;
+penalty-adjusted paired comparisons remain a separate export. No predictive or
+recommendation engine was added.

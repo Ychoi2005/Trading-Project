@@ -1,0 +1,49 @@
+scenario,policy,penalty_per_share,mean_cost,completion_rate
+Execution budget 100 ms,Always Execute,0.0,1.2000000000009887,1.0
+Execution budget 100 ms,Wait for Fresh Data,0.0,0.187306439609344,0.0
+Execution budget 100 ms,Data Quality Guardrail,0.0,0.187306439609344,0.0
+Execution budget 100 ms,Adaptive Decision Policy,0.0,0.187306439609344,0.0
+Execution budget 300 ms,Always Execute,0.0,1.2000000000009887,1.0
+Execution budget 300 ms,Wait for Fresh Data,0.0,1.2740539256273524,0.99
+Execution budget 300 ms,Data Quality Guardrail,0.0,0.33104051664467704,0.0
+Execution budget 300 ms,Adaptive Decision Policy,0.0,1.0353075268149248,0.73
+Execution budget 1000 ms,Always Execute,0.0,1.2000000000009887,1.0
+Execution budget 1000 ms,Wait for Fresh Data,0.0,1.287376262158764,1.0
+Execution budget 1000 ms,Data Quality Guardrail,0.0,0.6631705988498595,0.0
+Execution budget 1000 ms,Adaptive Decision Policy,0.0,1.3030602027147236,0.97
+Execution budget 100 ms,Always Execute,0.01,1.2000000000009887,1.0
+Execution budget 100 ms,Wait for Fresh Data,0.01,1.187306439609344,0.0
+Execution budget 100 ms,Data Quality Guardrail,0.01,1.187306439609344,0.0
+Execution budget 100 ms,Adaptive Decision Policy,0.01,1.187306439609344,0.0
+Execution budget 300 ms,Always Execute,0.01,1.2000000000009887,1.0
+Execution budget 300 ms,Wait for Fresh Data,0.01,1.2840539256273524,0.99
+Execution budget 300 ms,Data Quality Guardrail,0.01,1.331040516644677,0.0
+Execution budget 300 ms,Adaptive Decision Policy,0.01,1.3053075268149248,0.73
+Execution budget 1000 ms,Always Execute,0.01,1.2000000000009887,1.0
+Execution budget 1000 ms,Wait for Fresh Data,0.01,1.287376262158764,1.0
+Execution budget 1000 ms,Data Quality Guardrail,0.01,1.6631705988498595,0.0
+Execution budget 1000 ms,Adaptive Decision Policy,0.01,1.3330602027147236,0.97
+Execution budget 100 ms,Always Execute,0.1,1.2000000000009887,1.0
+Execution budget 100 ms,Wait for Fresh Data,0.1,10.187306439609344,0.0
+Execution budget 100 ms,Data Quality Guardrail,0.1,10.187306439609344,0.0
+Execution budget 100 ms,Adaptive Decision Policy,0.1,10.187306439609344,0.0
+Execution budget 300 ms,Always Execute,0.1,1.2000000000009887,1.0
+Execution budget 300 ms,Wait for Fresh Data,0.1,1.3740539256273525,0.99
+Execution budget 300 ms,Data Quality Guardrail,0.1,10.331040516644677,0.0
+Execution budget 300 ms,Adaptive Decision Policy,0.1,3.7353075268149265,0.73
+Execution budget 1000 ms,Always Execute,0.1,1.2000000000009887,1.0
+Execution budget 1000 ms,Wait for Fresh Data,0.1,1.287376262158764,1.0
+Execution budget 1000 ms,Data Quality Guardrail,0.1,10.663170598849858,0.0
+Execution budget 1000 ms,Adaptive Decision Policy,0.1,1.6030602027147238,0.97
+Execution budget 100 ms,Always Execute,1.0,1.2000000000009887,1.0
+Execution budget 100 ms,Wait for Fresh Data,1.0,100.18730643960933,0.0
+Execution budget 100 ms,Data Quality Guardrail,1.0,100.18730643960933,0.0
+Execution budget 100 ms,Adaptive Decision Policy,1.0,100.18730643960933,0.0
+Execution budget 300 ms,Always Execute,1.0,1.2000000000009887,1.0
+Execution budget 300 ms,Wait for Fresh Data,1.0,2.274053925627352,0.99
+Execution budget 300 ms,Data Quality Guardrail,1.0,100.33104051664468,0.0
+Execution budget 300 ms,Adaptive Decision Policy,1.0,28.035307526814925,0.73
+Execution budget 1000 ms,Always Execute,1.0,1.2000000000009887,1.0
+Execution budget 1000 ms,Wait for Fresh Data,1.0,1.287376262158764,1.0
+Execution budget 1000 ms,Data Quality Guardrail,1.0,100.66317059884986,0.0
+Execution budget 1000 ms,Adaptive Decision Policy,1.0,4.303060202714724,0.97

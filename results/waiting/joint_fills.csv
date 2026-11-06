@@ -1,0 +1,13 @@
+scenario,policy,matched_seeds,joint_fills,mean_difference,ci_low,ci_high,lower_cost_pairs,higher_cost_pairs
+Maximum wait 0 ms,Wait for Fresh Data,100,0,,,,0,0
+Maximum wait 0 ms,Data Quality Guardrail,100,0,,,,0,0
+Maximum wait 0 ms,Adaptive Decision Policy,100,0,,,,0,0
+Maximum wait 200 ms,Wait for Fresh Data,100,69,0.11085611474258492,-0.03127936033542278,0.2529915898205926,29,40
+Maximum wait 200 ms,Data Quality Guardrail,100,0,,,,0,0
+Maximum wait 200 ms,Adaptive Decision Policy,100,0,,,,0,0
+Maximum wait 750 ms,Wait for Fresh Data,100,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577,42,58
+Maximum wait 750 ms,Data Quality Guardrail,100,0,,,,0,0
+Maximum wait 750 ms,Adaptive Decision Policy,100,97,0.10797789402209197,-0.022282206853298667,0.2382379948974826,44,53
+Maximum wait 1500 ms,Wait for Fresh Data,100,100,0.08737626215777539,-0.03849198081670693,0.2132445051322577,42,58
+Maximum wait 1500 ms,Data Quality Guardrail,100,0,,,,0,0
+Maximum wait 1500 ms,Adaptive Decision Policy,100,97,0.10797789402209197,-0.022282206853298667,0.2382379948974826,44,53

@@ -82,6 +82,7 @@ def test_export_and_manifest_replay(tmp_path):
         "paired.csv",
         "sensitivity.csv",
         "manifest.json",
+        "joint_fills.csv",
     }
 
 
@@ -142,3 +143,29 @@ def test_policy_selection_and_equivalent_observation_interface():
         run_experiment((Scenario(),), (42,), policy_names=())
     with pytest.raises(ValueError):
         run_experiment((Scenario(),), (42,), policies=(AlwaysExecute(),), policy_names=names)
+
+
+@pytest.mark.parametrize(
+    "kind,count", [("tradeoffs", 5), ("waiting", 4), ("urgency", 3), ("volatility_latency", 9)]
+)
+def test_new_tradeoff_suites_are_reproducible_and_matched(kind, count):
+    scenarios = scenario_suite(kind)
+    assert len(scenarios) == count
+    a = run_experiment(scenarios, (42, 43))
+    b = run_experiment(scenarios, (42, 43))
+    pd.testing.assert_frame_equal(a.records, b.records)
+    assert a.records.groupby(["scenario", "seed"]).path_id.nunique().eq(1).all()
+    if kind in {"waiting", "urgency"}:
+        assert a.records.groupby("seed").path_id.nunique().eq(1).all()
+
+
+def test_new_metrics_do_not_change_legacy_execution_outcomes():
+    from pathlib import Path
+
+    manifest = json.loads((Path(__file__).parents[1] / "results/latency/manifest.json").read_text())
+    old = pd.read_csv(Path(__file__).parents[1] / "results/latency/records.csv")
+    new = run_experiment(scenarios_from_manifest(manifest), (42, 43), manifest["penalty_per_share"])
+    expected = old[old.seed.isin([42, 43])].reset_index(drop=True)
+    pd.testing.assert_frame_equal(
+        new.records[expected.columns], expected, check_dtype=False, rtol=1e-10, atol=1e-10
+    )

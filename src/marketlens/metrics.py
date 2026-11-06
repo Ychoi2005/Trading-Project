@@ -26,7 +26,10 @@ def wilson_interval(successes: int, n: int) -> tuple[float, float]:
     denominator = 1 + z * z / n
     center = (p + z * z / (2 * n)) / denominator
     margin = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / denominator
-    return max(0.0, center - margin), min(1.0, center + margin)
+    return (
+        0.0 if successes == 0 else max(0.0, center - margin),
+        1.0 if successes == n else min(1.0, center + margin),
+    )
 
 
 def summarize(records: pd.DataFrame) -> pd.DataFrame:
@@ -62,6 +65,24 @@ def summarize(records: pd.DataFrame) -> pd.DataFrame:
                     else None
                 ),
                 mean_penalized_cost=float(group.penalized_cost.mean()),
+                stale_fill_rate=(
+                    float(filled.executed_on_stale_quote.mean()) if len(filled) else None
+                ),
+                no_quote_fill_rate=(
+                    float(filled.executed_without_quote.mean()) if len(filled) else None
+                ),
+                mean_execution_quote_age_ms=(
+                    float(filled.execution_quote_age_ms.mean())
+                    if filled.execution_quote_age_ms.notna().any()
+                    else None
+                ),
+                pending_stale_ms=float(group.pending_stale_ms.sum()),
+                pending_unavailable_ms=float(group.pending_unavailable_ms.sum()),
+                pending_stale_fraction=(
+                    float(group.pending_stale_ms.sum() / group.pending_duration_ms.sum())
+                    if group.pending_duration_ms.sum()
+                    else None
+                ),
             )
         )
     return pd.DataFrame(rows)
@@ -129,3 +150,49 @@ def penalty_sensitivity(
                 )
             )
     return pd.DataFrame(rows)
+
+
+def joint_fill_comparisons(records: pd.DataFrame) -> pd.DataFrame:
+    """Actual paired filled-cost differences; never assign zero fill cost to an unfilled order."""
+    rows = []
+    for scenario, group in records.groupby("scenario", sort=False):
+        base = group[group.policy == "Always Execute"].set_index("seed")
+        if base.empty:
+            continue
+        for policy in group.policy.unique():
+            if policy == "Always Execute":
+                continue
+            other = group[group.policy == policy].set_index("seed")
+            pairs = other.merge(
+                base, left_index=True, right_index=True, suffixes=("_policy", "_base"), how="left"
+            )
+            joint = pairs[pairs.filled_policy & pairs.filled_base]
+            delta = joint.implementation_shortfall_policy - joint.implementation_shortfall_base
+            low, high = mean_interval(delta.to_numpy(dtype=float))
+            rows.append(
+                dict(
+                    scenario=scenario,
+                    policy=policy,
+                    matched_seeds=len(pairs),
+                    joint_fills=len(joint),
+                    mean_difference=float(delta.mean()) if len(joint) else None,
+                    ci_low=low,
+                    ci_high=high,
+                    lower_cost_pairs=int((delta < -1e-9).sum()),
+                    higher_cost_pairs=int((delta > 1e-9).sum()),
+                )
+            )
+    return pd.DataFrame(
+        rows,
+        columns=[
+            "scenario",
+            "policy",
+            "matched_seeds",
+            "joint_fills",
+            "mean_difference",
+            "ci_low",
+            "ci_high",
+            "lower_cost_pairs",
+            "higher_cost_pairs",
+        ],
+    )

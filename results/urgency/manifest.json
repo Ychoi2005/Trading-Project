@@ -1,0 +1,246 @@
+{
+  "schema_version": 2,
+  "scenarios": [
+    {
+      "name": "Execution budget 100 ms",
+      "market": {
+        "initial_price": 100.0,
+        "duration_ms": 10000,
+        "step_ms": 50,
+        "drift": 0.0,
+        "volatility": 0.8,
+        "spread": 0.02,
+        "liquidity": 1000.0,
+        "seed": 42,
+        "regime": "stable"
+      },
+      "faults": {
+        "latency_ms": 100,
+        "missing_probability": 0.35,
+        "stale_intervals": [],
+        "outage_intervals": [
+          {
+            "start_ms": 900,
+            "end_ms": 1200
+          }
+        ],
+        "seed": 31415
+      },
+      "order": {
+        "arrival_ms": 1000,
+        "deadline_ms": 1100,
+        "quantity": 100.0,
+        "fee_per_share": 0.001,
+        "impact_coefficient": 0.01,
+        "benchmark_price": null
+      },
+      "policy": {
+        "freshness_ms": 150,
+        "max_wait_ms": 750,
+        "pause_after_ms": 500,
+        "max_spread": 0.1,
+        "max_sequence_gap": 1,
+        "timeout_execute": false
+      },
+      "decision_step_ms": 50
+    },
+    {
+      "name": "Execution budget 300 ms",
+      "market": {
+        "initial_price": 100.0,
+        "duration_ms": 10000,
+        "step_ms": 50,
+        "drift": 0.0,
+        "volatility": 0.8,
+        "spread": 0.02,
+        "liquidity": 1000.0,
+        "seed": 42,
+        "regime": "stable"
+      },
+      "faults": {
+        "latency_ms": 100,
+        "missing_probability": 0.35,
+        "stale_intervals": [],
+        "outage_intervals": [
+          {
+            "start_ms": 900,
+            "end_ms": 1200
+          }
+        ],
+        "seed": 31415
+      },
+      "order": {
+        "arrival_ms": 1000,
+        "deadline_ms": 1300,
+        "quantity": 100.0,
+        "fee_per_share": 0.001,
+        "impact_coefficient": 0.01,
+        "benchmark_price": null
+      },
+      "policy": {
+        "freshness_ms": 150,
+        "max_wait_ms": 750,
+        "pause_after_ms": 500,
+        "max_spread": 0.1,
+        "max_sequence_gap": 1,
+        "timeout_execute": false
+      },
+      "decision_step_ms": 50
+    },
+    {
+      "name": "Execution budget 1000 ms",
+      "market": {
+        "initial_price": 100.0,
+        "duration_ms": 10000,
+        "step_ms": 50,
+        "drift": 0.0,
+        "volatility": 0.8,
+        "spread": 0.02,
+        "liquidity": 1000.0,
+        "seed": 42,
+        "regime": "stable"
+      },
+      "faults": {
+        "latency_ms": 100,
+        "missing_probability": 0.35,
+        "stale_intervals": [],
+        "outage_intervals": [
+          {
+            "start_ms": 900,
+            "end_ms": 1200
+          }
+        ],
+        "seed": 31415
+      },
+      "order": {
+        "arrival_ms": 1000,
+        "deadline_ms": 2000,
+        "quantity": 100.0,
+        "fee_per_share": 0.001,
+        "impact_coefficient": 0.01,
+        "benchmark_price": null
+      },
+      "policy": {
+        "freshness_ms": 150,
+        "max_wait_ms": 750,
+        "pause_after_ms": 500,
+        "max_spread": 0.1,
+        "max_sequence_gap": 1,
+        "timeout_execute": false
+      },
+      "decision_step_ms": 50
+    }
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141
+  ],
+  "penalty_per_share": 0.1,
+  "policy_names": null,
+  "policies": "standard_policies_per_scenario",
+  "software": {
+    "marketlens": "0.2.0",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1"
+  }
+}

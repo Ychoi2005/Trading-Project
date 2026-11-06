@@ -105,3 +105,40 @@ Student-t interval on those differences. These require independent trials and
 sufficient samples; heavy tails, small samples and selection by fill can make
 intervals misleading. No multiple-comparison correction or significance claim
 is made. Confidence intervals are not prediction intervals.
+
+## Product diagnostics and stale-data exposure
+
+The default UI uses an explicitly labelled **Reliability stress demonstration**:
+80% annualised volatility, 100 ms latency, 35% independent missing updates, a delivery
+outage [900,1200) ms, arrival 1000 ms, 150 ms freshness limit, maximum wait 750 ms,
+silence limit 500 ms and last-sequence-gap limit 1. Seed 42 is unchanged. These
+assumptions expose different responses, not a guaranteed winning policy. The
+**Healthy-market baseline** is separately selectable; all original advanced
+controls remain available. They override the preset starting point.
+
+The Decision Intelligence Panel is retrospective presentation, not a new trading
+policy. It uses actual events, deliveries and traces to explain the current path.
+Suppression counts and true price ranges are labelled retrospective. It does not
+make a live claim that an unreceived update has already been detected.
+
+`execution_quote_age_ms` measures the last observed quote at actual filled
+submission. `executed_on_stale_quote` tests that age against the configured
+freshness limit. No-quote executions are a distinct flag and are never assigned
+zero age. Summary stale/no-quote fill rates use filled orders as their denominator;
+with no fills the rates are undefined.
+
+Pending exposure integrates the held quote's stale duration between decision
+boundaries, including threshold crossings between ticks. Delivery timestamps are
+already decision boundaries. Missing-quote duration is counted separately.
+`pending_stale_fraction` aggregates stale milliseconds / pending milliseconds;
+it is undefined for immediate terminal decisions. It is not an average over an
+irregular number of trace entries, and it does not measure hidden price error.
+Reliability strips and diagnosis fractions are sampled on the market grid and are
+labelled as such; they are separate from integrated pending exposure.
+
+Joint-fill comparisons compute policy-minus-baseline shortfall on matched seeds
+where both filled, with Student-t mean intervals and counts of lower/higher costs
+(tolerance 1e-9 currency). These have selection bias when fill sets differ; report
+unconditional completion and penalty sensitivity alongside them. No result is
+used to retrospectively change a decision. Quote markers use observed prices;
+truth is a distinct dashed/solid-styled retrospective overlay, not policy input.

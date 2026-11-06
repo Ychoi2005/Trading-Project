@@ -27,7 +27,14 @@ def test_cli_generation_and_replay(tmp_path, monkeypatch, capsys):
         ],
     )
     main()
-    for name in ["records.csv", "summary.csv", "paired.csv", "sensitivity.csv", "manifest.json"]:
+    for name in [
+        "records.csv",
+        "summary.csv",
+        "paired.csv",
+        "sensitivity.csv",
+        "manifest.json",
+        "joint_fills.csv",
+    ]:
         assert (output / name).read_bytes() == (replay / name).read_bytes()
     assert len(pd.read_csv(output / "records.csv")) == 48
 

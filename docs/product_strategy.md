@@ -91,3 +91,48 @@ claims. The next product decision should be informed by actual task-based testin
 with intended users and reproducible scenario findings. Before any operational
 role, resolve the model, market-data, risk and security limitations documented in
 `limitations.md`. Real trading requires substantially more than this prototype.
+
+## Product experience upgrade: turning evidence into operational questions
+
+The first release's healthy defaults made every policy coincide. Hiding the tie or
+cherry-picking a winning seed would weaken the product. Instead, the default now
+uses a labelled reliability stress demonstration and retains a healthy reference.
+The executive panel answers four questions: what happened, which feed issues are
+visible retrospectively, how policies responded, and what execution/non-execution
+trade-offs remain. Its single-path explanations explicitly request repeated-trial
+validation. It does not introduce an opaque recommendation score.
+
+### Decisions supported by executed experiments
+
+| Executed evidence | Product decision | What it does not prove |
+| --- | --- | --- |
+| Healthy control gives identical decisions/costs | Explain ties and retain a healthy preset | That comparison adds no value under failures |
+| Intermittent-feed wait policy filled 100/100; cheaper in 42 paths, dearer in 58 | Show paired differences and both favorable/unfavorable counts | A universal waiting advantage |
+| Adaptive filled 97/100, guardrail 0/100 in the demonstration stress | Display completion beside conditional cost, with unfilled states | That pausing is always wrong or always safe |
+| 200→750 ms wait budget changed completion 69%→100%; 1500 ms added no improvement in this run | Make waiting budgets visible and test sensitivity | A production-ready optimal threshold |
+| Urgent deadlines changed waiting-policy completion | Present urgency alongside data freshness | That a single deadline is appropriate for all orders |
+| Insufficient displayed liquidity prevented all fills | Explain capacity rejection separately from feed quality | That more waiting can solve a fixed capacity constraint |
+
+All figures come from checked-in schema-2 runs with seeds 42–141. See
+`experiments.md` for exact assumptions, mean intervals and selection caveats.
+The mean paired waiting-cost interval includes zero; the product must not claim a
+statistically established improvement. Penalty sensitivity prevents unfilled orders
+from being marketed as free wins. Confidence intervals are not performance guarantees.
+
+### Information hierarchy and interaction decisions
+
+- The overview leads with quote age, latency, suppressed-update diagnostics and
+  completion rather than raw event objects. Narrative is generated from actual traces.
+- Policy comparison separates execution outcomes, observed-data exposure, penalty
+  assumptions and raw exports. Costs and completion have explicit uncertainty labels.
+- Market and decision views distinguish true versus delivered prices with line style
+  as well as color; action symbols and hover explanations connect behavior to rules.
+- Presets reduce setup effort; advanced timing, costs and raw JSON remain available
+  in expanders. Changing controls invalidates comparisons and labels historical insights.
+- Real browser screenshots document the interface. They are not evidence of user
+  satisfaction, commercial demand or usability validation; no user study is claimed.
+
+Next research: test user comprehension of completion versus conditional cost,
+validate chart accessibility, add correlated latency and calibrated liquidity, and
+measure whether analysts can reproduce and explain an incident. These are proposed
+research tasks, not invented interview outcomes or adoption metrics.
