@@ -1,0 +1,7 @@
+scenario,policy,baseline,pairs,mean_cost_difference,ci_low,ci_high
+Configured scenario,Adaptive Decision Policy,Always Execute,100,0.0,0.0,0.0
+Configured scenario,Data Quality Guardrail,Always Execute,100,0.0,0.0,0.0
+Configured scenario,Wait for Fresh Data,Always Execute,100,0.0,0.0,0.0
+Combined failures,Adaptive Decision Policy,Always Execute,100,6.230094953774948,6.148049298936566,6.312140608613331
+Combined failures,Data Quality Guardrail,Always Execute,100,6.230094953774948,6.148049298936566,6.312140608613331
+Combined failures,Wait for Fresh Data,Always Execute,100,6.230094953774948,6.148049298936566,6.312140608613331

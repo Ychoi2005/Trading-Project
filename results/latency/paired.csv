@@ -1,0 +1,19 @@
+scenario,policy,baseline,pairs,mean_cost_difference,ci_low,ci_high
+Latency 0 ms,Adaptive Decision Policy,Always Execute,100,0.0,0.0,0.0
+Latency 0 ms,Data Quality Guardrail,Always Execute,100,0.0,0.0,0.0
+Latency 0 ms,Wait for Fresh Data,Always Execute,100,0.0,0.0,0.0
+Latency 50 ms,Adaptive Decision Policy,Always Execute,100,0.0,0.0,0.0
+Latency 50 ms,Data Quality Guardrail,Always Execute,100,0.0,0.0,0.0
+Latency 50 ms,Wait for Fresh Data,Always Execute,100,0.0,0.0,0.0
+Latency 100 ms,Adaptive Decision Policy,Always Execute,100,0.0,0.0,0.0
+Latency 100 ms,Data Quality Guardrail,Always Execute,100,0.0,0.0,0.0
+Latency 100 ms,Wait for Fresh Data,Always Execute,100,0.0,0.0,0.0
+Latency 250 ms,Adaptive Decision Policy,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 250 ms,Data Quality Guardrail,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 250 ms,Wait for Fresh Data,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 500 ms,Adaptive Decision Policy,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 500 ms,Data Quality Guardrail,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 500 ms,Wait for Fresh Data,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 1000 ms,Adaptive Decision Policy,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 1000 ms,Data Quality Guardrail,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966
+Latency 1000 ms,Wait for Fresh Data,Always Execute,100,9.130094953774584,9.048049298936203,9.212140608612966

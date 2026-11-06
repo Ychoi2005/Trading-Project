@@ -1,0 +1,97 @@
+scenario,policy,penalty_per_share,mean_cost,completion_rate
+Latency 0 ms,Always Execute,0.0,1.2000000000009887,1.0
+Latency 0 ms,Wait for Fresh Data,0.0,1.2000000000009887,1.0
+Latency 0 ms,Data Quality Guardrail,0.0,1.2000000000009887,1.0
+Latency 0 ms,Adaptive Decision Policy,0.0,1.2000000000009887,1.0
+Latency 50 ms,Always Execute,0.0,1.2000000000009887,1.0
+Latency 50 ms,Wait for Fresh Data,0.0,1.2000000000009887,1.0
+Latency 50 ms,Data Quality Guardrail,0.0,1.2000000000009887,1.0
+Latency 50 ms,Adaptive Decision Policy,0.0,1.2000000000009887,1.0
+Latency 100 ms,Always Execute,0.0,1.2000000000009887,1.0
+Latency 100 ms,Wait for Fresh Data,0.0,1.2000000000009887,1.0
+Latency 100 ms,Data Quality Guardrail,0.0,1.2000000000009887,1.0
+Latency 100 ms,Adaptive Decision Policy,0.0,1.2000000000009887,1.0
+Latency 250 ms,Always Execute,0.0,1.2000000000009887,1.0
+Latency 250 ms,Wait for Fresh Data,0.0,0.3300949537755713,0.0
+Latency 250 ms,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Latency 250 ms,Adaptive Decision Policy,0.0,0.3300949537755713,0.0
+Latency 500 ms,Always Execute,0.0,1.2000000000009887,1.0
+Latency 500 ms,Wait for Fresh Data,0.0,0.3300949537755713,0.0
+Latency 500 ms,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Latency 500 ms,Adaptive Decision Policy,0.0,0.3300949537755713,0.0
+Latency 1000 ms,Always Execute,0.0,1.2000000000009887,1.0
+Latency 1000 ms,Wait for Fresh Data,0.0,0.3300949537755713,0.0
+Latency 1000 ms,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Latency 1000 ms,Adaptive Decision Policy,0.0,0.3300949537755713,0.0
+Latency 0 ms,Always Execute,0.01,1.2000000000009887,1.0
+Latency 0 ms,Wait for Fresh Data,0.01,1.2000000000009887,1.0
+Latency 0 ms,Data Quality Guardrail,0.01,1.2000000000009887,1.0
+Latency 0 ms,Adaptive Decision Policy,0.01,1.2000000000009887,1.0
+Latency 50 ms,Always Execute,0.01,1.2000000000009887,1.0
+Latency 50 ms,Wait for Fresh Data,0.01,1.2000000000009887,1.0
+Latency 50 ms,Data Quality Guardrail,0.01,1.2000000000009887,1.0
+Latency 50 ms,Adaptive Decision Policy,0.01,1.2000000000009887,1.0
+Latency 100 ms,Always Execute,0.01,1.2000000000009887,1.0
+Latency 100 ms,Wait for Fresh Data,0.01,1.2000000000009887,1.0
+Latency 100 ms,Data Quality Guardrail,0.01,1.2000000000009887,1.0
+Latency 100 ms,Adaptive Decision Policy,0.01,1.2000000000009887,1.0
+Latency 250 ms,Always Execute,0.01,1.2000000000009887,1.0
+Latency 250 ms,Wait for Fresh Data,0.01,1.3300949537755713,0.0
+Latency 250 ms,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Latency 250 ms,Adaptive Decision Policy,0.01,1.3300949537755713,0.0
+Latency 500 ms,Always Execute,0.01,1.2000000000009887,1.0
+Latency 500 ms,Wait for Fresh Data,0.01,1.3300949537755713,0.0
+Latency 500 ms,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Latency 500 ms,Adaptive Decision Policy,0.01,1.3300949537755713,0.0
+Latency 1000 ms,Always Execute,0.01,1.2000000000009887,1.0
+Latency 1000 ms,Wait for Fresh Data,0.01,1.3300949537755713,0.0
+Latency 1000 ms,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Latency 1000 ms,Adaptive Decision Policy,0.01,1.3300949537755713,0.0
+Latency 0 ms,Always Execute,0.1,1.2000000000009887,1.0
+Latency 0 ms,Wait for Fresh Data,0.1,1.2000000000009887,1.0
+Latency 0 ms,Data Quality Guardrail,0.1,1.2000000000009887,1.0
+Latency 0 ms,Adaptive Decision Policy,0.1,1.2000000000009887,1.0
+Latency 50 ms,Always Execute,0.1,1.2000000000009887,1.0
+Latency 50 ms,Wait for Fresh Data,0.1,1.2000000000009887,1.0
+Latency 50 ms,Data Quality Guardrail,0.1,1.2000000000009887,1.0
+Latency 50 ms,Adaptive Decision Policy,0.1,1.2000000000009887,1.0
+Latency 100 ms,Always Execute,0.1,1.2000000000009887,1.0
+Latency 100 ms,Wait for Fresh Data,0.1,1.2000000000009887,1.0
+Latency 100 ms,Data Quality Guardrail,0.1,1.2000000000009887,1.0
+Latency 100 ms,Adaptive Decision Policy,0.1,1.2000000000009887,1.0
+Latency 250 ms,Always Execute,0.1,1.2000000000009887,1.0
+Latency 250 ms,Wait for Fresh Data,0.1,10.330094953775571,0.0
+Latency 250 ms,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Latency 250 ms,Adaptive Decision Policy,0.1,10.330094953775571,0.0
+Latency 500 ms,Always Execute,0.1,1.2000000000009887,1.0
+Latency 500 ms,Wait for Fresh Data,0.1,10.330094953775571,0.0
+Latency 500 ms,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Latency 500 ms,Adaptive Decision Policy,0.1,10.330094953775571,0.0
+Latency 1000 ms,Always Execute,0.1,1.2000000000009887,1.0
+Latency 1000 ms,Wait for Fresh Data,0.1,10.330094953775571,0.0
+Latency 1000 ms,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Latency 1000 ms,Adaptive Decision Policy,0.1,10.330094953775571,0.0
+Latency 0 ms,Always Execute,1.0,1.2000000000009887,1.0
+Latency 0 ms,Wait for Fresh Data,1.0,1.2000000000009887,1.0
+Latency 0 ms,Data Quality Guardrail,1.0,1.2000000000009887,1.0
+Latency 0 ms,Adaptive Decision Policy,1.0,1.2000000000009887,1.0
+Latency 50 ms,Always Execute,1.0,1.2000000000009887,1.0
+Latency 50 ms,Wait for Fresh Data,1.0,1.2000000000009887,1.0
+Latency 50 ms,Data Quality Guardrail,1.0,1.2000000000009887,1.0
+Latency 50 ms,Adaptive Decision Policy,1.0,1.2000000000009887,1.0
+Latency 100 ms,Always Execute,1.0,1.2000000000009887,1.0
+Latency 100 ms,Wait for Fresh Data,1.0,1.2000000000009887,1.0
+Latency 100 ms,Data Quality Guardrail,1.0,1.2000000000009887,1.0
+Latency 100 ms,Adaptive Decision Policy,1.0,1.2000000000009887,1.0
+Latency 250 ms,Always Execute,1.0,1.2000000000009887,1.0
+Latency 250 ms,Wait for Fresh Data,1.0,100.33009495377557,0.0
+Latency 250 ms,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Latency 250 ms,Adaptive Decision Policy,1.0,100.33009495377557,0.0
+Latency 500 ms,Always Execute,1.0,1.2000000000009887,1.0
+Latency 500 ms,Wait for Fresh Data,1.0,100.33009495377557,0.0
+Latency 500 ms,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Latency 500 ms,Adaptive Decision Policy,1.0,100.33009495377557,0.0
+Latency 1000 ms,Always Execute,1.0,1.2000000000009887,1.0
+Latency 1000 ms,Wait for Fresh Data,1.0,100.33009495377557,0.0
+Latency 1000 ms,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Latency 1000 ms,Adaptive Decision Policy,1.0,100.33009495377557,0.0

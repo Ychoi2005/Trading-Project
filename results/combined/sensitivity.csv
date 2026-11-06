@@ -1,0 +1,33 @@
+scenario,policy,penalty_per_share,mean_cost,completion_rate
+Configured scenario,Always Execute,0.0,1.2000000000009887,1.0
+Configured scenario,Wait for Fresh Data,0.0,1.2000000000009887,1.0
+Configured scenario,Data Quality Guardrail,0.0,1.2000000000009887,1.0
+Configured scenario,Adaptive Decision Policy,0.0,1.2000000000009887,1.0
+Combined failures,Always Execute,0.0,4.100000000000627,1.0
+Combined failures,Wait for Fresh Data,0.0,0.3300949537755713,0.0
+Combined failures,Data Quality Guardrail,0.0,0.3300949537755713,0.0
+Combined failures,Adaptive Decision Policy,0.0,0.3300949537755713,0.0
+Configured scenario,Always Execute,0.01,1.2000000000009887,1.0
+Configured scenario,Wait for Fresh Data,0.01,1.2000000000009887,1.0
+Configured scenario,Data Quality Guardrail,0.01,1.2000000000009887,1.0
+Configured scenario,Adaptive Decision Policy,0.01,1.2000000000009887,1.0
+Combined failures,Always Execute,0.01,4.100000000000627,1.0
+Combined failures,Wait for Fresh Data,0.01,1.3300949537755713,0.0
+Combined failures,Data Quality Guardrail,0.01,1.3300949537755713,0.0
+Combined failures,Adaptive Decision Policy,0.01,1.3300949537755713,0.0
+Configured scenario,Always Execute,0.1,1.2000000000009887,1.0
+Configured scenario,Wait for Fresh Data,0.1,1.2000000000009887,1.0
+Configured scenario,Data Quality Guardrail,0.1,1.2000000000009887,1.0
+Configured scenario,Adaptive Decision Policy,0.1,1.2000000000009887,1.0
+Combined failures,Always Execute,0.1,4.100000000000627,1.0
+Combined failures,Wait for Fresh Data,0.1,10.330094953775571,0.0
+Combined failures,Data Quality Guardrail,0.1,10.330094953775571,0.0
+Combined failures,Adaptive Decision Policy,0.1,10.330094953775571,0.0
+Configured scenario,Always Execute,1.0,1.2000000000009887,1.0
+Configured scenario,Wait for Fresh Data,1.0,1.2000000000009887,1.0
+Configured scenario,Data Quality Guardrail,1.0,1.2000000000009887,1.0
+Configured scenario,Adaptive Decision Policy,1.0,1.2000000000009887,1.0
+Combined failures,Always Execute,1.0,4.100000000000627,1.0
+Combined failures,Wait for Fresh Data,1.0,100.33009495377557,0.0
+Combined failures,Data Quality Guardrail,1.0,100.33009495377557,0.0
+Combined failures,Adaptive Decision Policy,1.0,100.33009495377557,0.0

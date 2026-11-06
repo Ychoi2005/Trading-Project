@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.coverage
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+coverage.xml
+results/latest/
+.DS_Store
+
+# Local environments and secrets (keep shareable examples).
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+!.env.template
+.streamlit/secrets.toml
+secrets/
+.aws/
+.ssh/
+*.pem
+*.key
+
+# Local runtime output; retain the documented research artifacts above.
+*.log
+*.tmp
+results/replay/
